@@ -5,6 +5,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
+gem 'jquery-rails'
 gem 'haml'
 gem 'bootstrap-sass', '~> 2.3.2.0'
 gem 'simple_form'
