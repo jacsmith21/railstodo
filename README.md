@@ -7,3 +7,4 @@ Ruby version: 2.3.3 (i386-mingw32)
 
 ## Technologies Used
 * The HTML Abstraction Markup Language (haml) is used as the templating engine instead of the default Embedded RuBy (erb) engine (similar but much cleaner)
+* .scss files are used instead of .css
