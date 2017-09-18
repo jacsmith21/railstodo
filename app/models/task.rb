@@ -4,7 +4,8 @@ class Task < ApplicationRecord
 
   private
   def future_completed_date
-    if !completed.blank? &amp;&amp; completed &gt; Date.today
+    if !completed.blank? && completed > Date.today
       self.errors.add(:completed, "can't be in the future")
     end
+  end
 end

@@ -27,10 +27,11 @@ class TasksController < ApplicationController
     params.require(:task).permit(:title, :note, :completed)
   end
   def save_task
-    if @task.Save
+    if @task.save
       @tasks = Task.all
       render :hide_form
     else
       render :show_form
     end
+  end
 end
