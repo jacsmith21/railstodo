@@ -37,8 +37,11 @@
 .text-right {
   text-align: right!important;
 }
-.table td {
+.table td, #task-input {
   padding: 20px;
+}
+.new-task {
+  font-size: 15px;
 }
 
 /* app */
