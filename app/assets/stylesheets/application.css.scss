@@ -17,3 +17,36 @@
  *= require_tree .
  *= require_self
  */
+
+.jumbotron h1 {
+  font-weight: 400;
+  font-size: 100px;
+  margin-bottom: 15px;
+}
+.jumbotron {
+  margin-bottom: 30px;
+}
+
+.modal form {
+  margin-bottom: 0;
+}
+
+.top-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 20px;
+}
+
+.form-inputs .user_remember_me {
+  margin-top: 10px;
+}
+.form-actions {
+  background-color: inherit;
+  border-top: 0px;
+  padding: 0px 0px 20px;
+  margin-top: 10px;
+}
+.form-actions input {
+  margin-left: 0;
+}

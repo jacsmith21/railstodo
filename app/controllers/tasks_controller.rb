@@ -15,7 +15,7 @@ class TasksController < ApplicationController
     @task = Task.find(params[:id])
     authorize! :destroy, @task
     @task.destroy
-    @tasks = Task.all
+    @tasks = Task.accessible_by(current_ability)
   end
 
   def edit
@@ -38,7 +38,7 @@ class TasksController < ApplicationController
 
   def save_task
     if @task.save
-      @tasks = Task.all
+      @tasks = Task.accessible_by(current_ability)
       render :hide_form
     else
       render :show_form

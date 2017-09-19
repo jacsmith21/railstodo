@@ -1,7 +1,7 @@
 - if tasks.empty?
   %span.text-warning There are no tasks!
 - else
-  %table.table.table-hover.table-bordered
+  %table.table.table-hover
     %thead
       %tr
         %th Title
@@ -16,7 +16,7 @@
           %td.text-info= task.created_at
           %td.text-success= task.completed
           %td
-            = link_to task_path(task), remote: true, method: :delete, data: {confirm: "Are you sure you want to delete #{task.title}?"} do
-              %i.icon-remove
+            = link_to task_path(task), remote: true, method: :delete do
+              %i.fa.fa-remove
             = link_to edit_task_path(task), remote: true do
-              %i.icon-edit
+              %i.fa.fa-edit
