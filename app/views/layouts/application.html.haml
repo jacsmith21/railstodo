@@ -3,13 +3,12 @@
   %head
     %title Rails Todo
     = csrf_meta_tags
-    = stylesheet_link_tag    'application', media: 'all'
+    = stylesheet_link_tag    'application', 'mdb.min', media: 'all'
     = javascript_include_tag 'application'
 
   %body
     .container
-      .jumbotron
+      .jumbotron.text-center
         %h1
-          ToDo
-          %small Test Application!
+          todo
       = yield

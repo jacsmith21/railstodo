@@ -6,15 +6,23 @@ Rails version: 5.1.4
 Ruby version: 2.3.3 (i386-mingw32)
 
 ## Building
+> Assuming you have git, ruby, rails and bundler installed
 1. `$ git clone github.com/jacsmith21/railstodo`
 2. `$ cd railstodo`
 3. `$ bundle install`
-4. `$ rails server`
+4. `$ gem install mailcatcher`
+5. `$ mailcatcher` (in one terminal)
+5. `$ rails server` (in another)
 
-> Assuming you have git, ruby, rails and bundler installed
+If you are receiving this error: `cannot load such file -- bcrypt` then run:
+1. `$ gem uninstall bcrypt`
+2. `$ gem install bcrypt --platform=Ruby`
 
 ## Technologies Used
-* The HTML Abstraction Markup Language (haml) is used as the templating engine instead of the default Embedded RuBy (erb) engine (similar but much cleaner)
-* .scss files are used instead of .css
+* The HTML Abstraction Markup Language `haml` is used as the templating engine instead of the default Embedded RuBy `erb` engine (similar but much cleaner)
+* `.scss` files are used instead of `.css`
+* `mailcatcher` is used to catch mail before it's (unsuccessfully) sent out
+* `devise` is used for authentication
+* `cancan` is used to manage permissions
 
 ## Features
