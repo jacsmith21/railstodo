@@ -5,9 +5,12 @@ Rails version: 5.1.4
 
 Ruby version: 2.3.3 (i386-mingw32)
 
+
+<img src="https://github.com/jacsmith21/railstodo/blob/master/screenshot.PNG" alt="Drawing" width="600"/>
+
 ## Building
 > Assuming you have git, ruby, rails and bundler installed
-1. `$ git clone github.com/jacsmith21/railstodo`
+1. `$ git clone github.com/jacsmith21/railstodo.git`
 2. `$ cd railstodo`
 3. `$ bundle install`
 4. `$ gem install mailcatcher`
@@ -24,6 +27,5 @@ If you are receiving this error: `cannot load such file -- bcrypt` then run:
 * `devise` is used for authentication
 * `cancan` is used to manage permissions
 
-## Todo
-1. Dockerize
-2. Make New Task button look better
+*Used as guide: [iridakos/todo](https://github.com/iridakos/todo)*  
+*Modeled style after: [tastejs/todomvc](https://github.com/iridakos/todo)*
