@@ -1,6 +1,9 @@
 class Task < ApplicationRecord
+  belongs_to :user
+
   validates_presence_of :title
   validate :future_completed_date
+  validates_presence_of :user
 
   private
   def future_completed_date
