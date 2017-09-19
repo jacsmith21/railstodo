@@ -9,7 +9,7 @@ Ruby version: 2.3.3 (i386-mingw32)
 <img src="https://github.com/jacsmith21/railstodo/blob/master/screenshot.PNG" alt="Drawing" width="600"/>
 
 ## Building
-> Assuming you have git, ruby, rails and bundler installed
+With ruby, rails and bundler:
 1. `$ git clone github.com/jacsmith21/railstodo.git`
 2. `$ cd railstodo`
 3. `$ bundle install`
@@ -17,9 +17,11 @@ Ruby version: 2.3.3 (i386-mingw32)
 5. `$ mailcatcher` (in one terminal)
 5. `$ rails server` (in another)
 
-or with docker:
-1. `docker build -t railstodo .`
-2. `docker run -it -p 3000:3000 test`
+Or with docker:
+1. `$ git clone github.com/jacsmith21/railstodo.git`
+2. `$ cd railstodo`
+3. `docker build -t railstodo .`
+4. `docker run -it -p 3000:3000 railstodo`
 
 If you are receiving this error: `cannot load such file -- bcrypt` then run:
 1. `$ gem uninstall bcrypt`
