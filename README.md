@@ -17,6 +17,10 @@ Ruby version: 2.3.3 (i386-mingw32)
 5. `$ mailcatcher` (in one terminal)
 5. `$ rails server` (in another)
 
+or with docker:
+1. `docker build -t railstodo .`
+2. `docker run -it -p 3000:3000 test`
+
 If you are receiving this error: `cannot load such file -- bcrypt` then run:
 1. `$ gem uninstall bcrypt`
 2. `$ gem install bcrypt --platform=Ruby`
