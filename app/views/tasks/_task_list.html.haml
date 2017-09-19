@@ -1,15 +1,12 @@
-- if tasks.empty?
-  %span.text-warning There are no tasks!
-- else
-  %table.table.table-hover
-    %tbody
-      - tasks.each do |task|
-        %tr
-          %td.task-name
-            = task.title
-          %td.text-success= task.completed
-          %td.text-right
-            = link_to task_path(task), remote: true, method: :delete do
-              %i.fa.fa-circle-o.fa-lg
-            = link_to edit_task_path(task), remote: true do
-              %i.fa.fa-edit.fa-lg
+%table.table.table-hover#tasks
+  %tbody
+    - tasks.each do |task|
+      %tr
+        %td.task-name
+          = task.title
+        %td.text-success= task.completed
+        %td.text-right
+          = link_to task_path(task), remote: true, method: :delete do
+            %i.fa.fa-remove.fa-lg
+          = link_to edit_task_path(task), remote: true do
+            %i.fa.fa-edit.fa-lg

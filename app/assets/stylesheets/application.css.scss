@@ -16,6 +16,7 @@
  *= require bootstrap-datepicker
  *= require_tree .
  *= require_self
+ *= require jquery-ui
  */
 
  /* task-container */
@@ -68,6 +69,12 @@
 /* forms */
 .form-inputs .user_remember_me {
   margin-top: 10px;
+}
+form {
+  margin: 0;
+}
+input {
+  margin-bottom: 0!important;
 }
 .form-actions {
   background-color: inherit;
