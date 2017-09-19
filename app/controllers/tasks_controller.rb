@@ -1,7 +1,7 @@
 class TasksController < ApplicationController
   def new
     @task = Task.new
-    render :show_form
+    render :show_task_input
   end
 
   def create
@@ -21,7 +21,7 @@ class TasksController < ApplicationController
   def edit
     @task = Task.find(params[:id])
     authorize! :create, @task
-    render :show_form
+    render :show_task_input
   end
 
   def update
@@ -39,9 +39,9 @@ class TasksController < ApplicationController
   def save_task
     if @task.save
       @tasks = Task.accessible_by(current_ability)
-      render :hide_form
+      render :hide_task_input
     else
-      render :show_form
+      render :show_task_input
     end
   end
 end

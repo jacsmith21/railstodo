@@ -18,19 +18,43 @@
  *= require_self
  */
 
-.jumbotron h1 {
+ /* task-container */
+ .task-container {
+   width: 550px;
+   margin-left: auto;
+   margin-right: auto;
+ }
+
+/* table */
+.task-name {
+  vertical-align: middle;
+  font-size: 25px;
+  margin: 5px;
+}
+.table {
+  margin-bottom: 0px;
+}
+.text-right {
+  text-align: right!important;
+}
+.table td {
+  padding: 20px;
+}
+
+/* app */
+.app h1 {
   font-weight: 400;
   font-size: 100px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
 }
-.jumbotron {
+.app {
+  margin-top: 50px;
   margin-bottom: 30px;
+  padding-bottom: 1rem;
 }
 
-.modal form {
-  margin-bottom: 0;
-}
 
+/* logout */
 .top-right {
   position: absolute;
   right: 0;
@@ -38,15 +62,19 @@
   margin: 20px;
 }
 
+/* forms */
 .form-inputs .user_remember_me {
   margin-top: 10px;
 }
 .form-actions {
   background-color: inherit;
   border-top: 0px;
-  padding: 0px 0px 20px;
+  padding: 0px 0px 0px;
   margin-top: 10px;
 }
 .form-actions input {
   margin-left: 0;
+}
+.modal form {
+  margin-bottom: 0;
 }

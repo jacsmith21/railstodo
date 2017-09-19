@@ -26,4 +26,4 @@ If you are receiving this error: `cannot load such file -- bcrypt` then run:
 
 ## Todo
 1. Dockerize
-2. Remove modal
+2. Make New Task button look better
