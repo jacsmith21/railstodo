@@ -14,8 +14,7 @@ With ruby, rails and bundler:
 2. `$ cd railstodo`
 3. `$ bundle install`
 4. `$ gem install mailcatcher`
-5. `$ mailcatcher` (in one terminal)
-5. `$ rails server` (in another)
+5. `$ rails server`
 
 Or with docker:
 1. `$ git clone github.com/jacsmith21/railstodo.git`
