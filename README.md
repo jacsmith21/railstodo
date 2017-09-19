@@ -28,4 +28,4 @@ If you are receiving this error: `cannot load such file -- bcrypt` then run:
 * `cancan` is used to manage permissions
 
 *Used as guide: [iridakos/todo](https://github.com/iridakos/todo)*  
-*Modeled style after: [tastejs/todomvc](https://github.com/iridakos/todo)*
+*Modeled style after: [tastejs/todomvc](https://github.com/tastejs/todomvc)*
