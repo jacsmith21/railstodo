@@ -10,13 +10,13 @@ Ruby version: 2.3.3 (i386-mingw32)
 
 ## Building
 With ruby, rails and bundler:
-1. `$ git clone github.com/jacsmith21/railstodo.git`
+1. `$ git clone https://github.com/jacsmith21/railstodo.git`
 2. `$ cd railstodo`
 3. `$ bundle install`
 4. `$ rails server`
 
 Or with docker:
-1. `$ git clone github.com/jacsmith21/railstodo.git`
+1. `$ git clone https://github.com/jacsmith21/railstodo.git`
 2. `$ cd railstodo`
 3. `docker build -t railstodo .`
 4. `docker run -it -p 3000:3000 railstodo`
