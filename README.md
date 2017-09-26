@@ -27,7 +27,6 @@ If you are receiving this error: `cannot load such file -- bcrypt` then run:
 
 ## Technologies Used
 * The HTML Abstraction Markup Language `haml` is used as the templating engine instead of the default Embedded RuBy `erb` engine (similar but much cleaner)
-* `mailcatcher` is used to catch mail before it's (unsuccessfully) sent out so that you can confirm your email!
 * `devise` is used for authentication
 * `cancan` is used to manage permissions
 
